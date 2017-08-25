@@ -18,21 +18,21 @@ nav {
 
 h1 {
 	color: white;
-	font-family: 'Georgia', Times, Times New Roman, serif;
+	font-family: 'Georgia', Times, 'Times New Roman', serif;
 	font-weight: 500;
 	font-size: 28px;
 }
 
 h2 {
 	color: #4aaaa5;
-	font-family: 'Georgia', Times, Times New Roman, serif;
+	font-family: 'Georgia', Times, 'Times New Roman', serif;
 	font-weight: 500;
 	font-size: 24px;
 }
 
 h3 {
 	color: #4aaaa5;
-	font-family: 'Georgia', Times, Times New Roman, serif;
+	font-family: 'Georgia', Times, 'Times New Roman', serif;
 	font-weight: 500;
 	font-size: 20px;
 }
@@ -68,15 +68,62 @@ footer {
 	text-align: center;
 }
 
-a {
+a.index {
 	text-decoration: none;
 	color: #888888;
 }
 
-a:hover {
-	color: #4aaaa5;
+a.portfolio {
+	text-decoration: none;
+	color: white;
 }
 
+a.index:hover {
+	color: #4aaaa5;
+	transition: all .3s;
+}
+
+a.portfolio:hover {
+	color: rebeccapurple;
+	transition: all .3s;
+}
+
+.container {
+	position: relative;
+	top: 10px;
+}
+
+.container2 {
+	position: relative;
+	bottom: 192px;
+	left: 303px;
+}
+
+.container3 {
+	position: relative;
+	bottom: 165px;
+}
+
+.container4 {
+	position: relative;
+	bottom: 366px;
+	left: 303px;
+}
+
+.container5 {
+	position: relative;
+	bottom: 339px;
+}
+
+a.image1:hover {
+	opacity: 0.6;
+	transition: all 0.5s;
+}
+
+a.image2:hover {
+	opacity: 0.6;
+	transition: all 0.5s;
+}
 
 .navbar {
 	color: lightgray;
@@ -99,12 +146,13 @@ a:hover {
 
 .icons:hover {
 	opacity: 0.6;
+	transition: all 0.3s;
 }
 
 #main-container {
 	background-color: white;
 	margin-left: 80px;
-	margin-bottom: 100px;
+	margin-bottom: 90px;
 	margin-right: 10px;
 	padding: 40px 35px 40px 35px;
 	width: 578px;
@@ -133,6 +181,7 @@ a:hover {
 
 .float-right {
 	float: right;
+	margin-right: 0px;
 }
 
 .float-left {
@@ -147,6 +196,18 @@ a:hover {
 
 .border-teal {
   border-top: 8px solid #4aaaa5;
+}
+
+.banner {
+	background-color: #4aaaa5;
+	padding: 15px;
+	width: 245px;
+	text-align: center;
+	font-family: 'Georgia', Times, 'Times New Roman', serif;
+	font-size: 18px;
+	color: white;
+	position: absolute;
+	top: 70%;
 }
 
 .clearfix::after {
