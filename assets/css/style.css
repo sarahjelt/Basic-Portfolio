@@ -59,13 +59,14 @@ footer {
 	background-color: #666666;
 	padding-top: 30px;
 	padding-bottom: 30px;
-	color: white;
-	position: fixed;
+	color: #dddddd;
 	bottom: 0px;
+	left: 0px;
 	font-size: 14px;
 	clear: both;
 	width: 100%;
 	text-align: center;
+	z-index: 100;
 }
 
 a.index {
@@ -115,14 +116,12 @@ a.portfolio:hover {
 	bottom: 339px;
 }
 
-a.image1:hover {
-	opacity: 0.6;
-	transition: all 0.5s;
+a.active {
+	color: #4aaaa5;
 }
 
-a.image2:hover {
-	opacity: 0.6;
-	transition: all 0.5s;
+a.active:hover {
+	color: lightgray;
 }
 
 .navbar {
@@ -152,7 +151,7 @@ a.image2:hover {
 #main-container {
 	background-color: white;
 	margin-left: 80px;
-	margin-bottom: 90px;
+	margin-bottom: 40px;
 	margin-right: 10px;
 	padding: 40px 35px 40px 35px;
 	width: 578px;
@@ -214,4 +213,51 @@ a.image2:hover {
 	content: " ";
 	display: block;
 	clear: both;
+}
+
+/* form stuff */
+input[type=text], select, textarea {
+    font-size: 16px;
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */  
+    border: 1px solid #cccccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: lightgray;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: lightgray;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: lightgray;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: lightgray;
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #4aaaa5;
+    font-size: 16px;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, change background color */
+input[type=submit]:hover {
+    background-color: rebeccapurple;
+}
+
+.form-container {
+	color: #777777;
+	padding-top: 20px;
 }
