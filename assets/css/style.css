@@ -132,6 +132,7 @@ a.active:hover {
 
 .navbar-outer {
 	width: 100%;
+	border-bottom: 2px solid #cccccc;
 }
 
 .line-height {
@@ -156,7 +157,7 @@ a.active:hover {
 	padding: 40px 35px 40px 35px;
 	width: 578px;
 	float: left;
-	border: 1px solid #cccccc;
+	border: 1px solid #dddddd;
 }
 
 #sidebar {
@@ -165,9 +166,8 @@ a.active:hover {
 	margin-left: 10px;
 	margin-bottom: 100px;
 	width: 198px;
-	border-color: lightgray;
 	float: left;
-	border: 1px solid #cccccc;
+	border: 1px solid #dddddd;
 }
 
 .profile-margin {
